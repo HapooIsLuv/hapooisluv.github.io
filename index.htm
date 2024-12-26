@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My message</title>
+    <script defer src = "./script.js"></script>
+</head>
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+    * {
+        font-family: "Open sans";
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hidden {
+        display: none;
+    }   
+
+    body {
+        background-image: url("./background.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .clock {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(170, 170, 170, 0.8);
+        margin: 100px;
+        padding: 100px;
+        height: 50%;
+    }   
+
+    .title {
+        position: absolute;
+        top: 30%;   
+    }
+
+
+    .myMSG {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(170, 170, 170, 0.8);
+        margin: 100px;
+        padding: 100px;
+        height: 50%; 
+    }
+
+</style>
+<body>
+
+    <div class="clock">
+        <h1 class = "title">
+            Time remaining: 
+        </h1>
+        <p class = "time">
+            Fetching Data...
+        </p>
+    </div>
+
+    <div class = "hidden" id = "myMessage">
+        준서에게...
+        <br>
+        <br>
+
+        내가 개발자이기에 뭔가 준서에게 특별한 이벤트를 할 수 있는게 있나 생각해본 결과, 개발자로만 할 수 있는 프로그래밍을 이용해서 
+        이런 웹사이트를 만들게 되었어. 아무튼 두바이에 있었을때 너랑 놀 수 있는게 재밌었어. 말레이시아에 가서도 나는 준서가 친구들 많이 사귀고 
+        공부도 잘할거라는거 알아. 주눅들지 말고 자신의 길을 잘 개척해 나가렴. 다는 준서를 언제나 응원할게. 말레이시아 가서도 연락하자. 어른이 되서 부자가 되면 다시 날 만나러와야 한다!
+        
+
+        연준이가...
+
+        <br>
+        <br>
+
+        PS: 아 제발 웹사이트 버그나지 말아라 제발ㅠㅠ
+    </div>  
+</body>
+</html>
