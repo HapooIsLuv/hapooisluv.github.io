@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members</title>
+  <script type="module" crossorigin src="/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
+  <script type="module" crossorigin src="/assets/authenticator-ZkDHeO09.js"></script>
+  <script type="module" crossorigin src="/assets/main-Rtrt4-xs.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-5BYvHeyF.css">
+</head>
+<body>
+    <style>
+
+
+      body {
+        background-color: #111;
+
+        color: white;
+
+        font-family: "Segoe UI", sans-serif;
+
+        text-align: center;
+
+        padding: 0px;
+      }
+
+      h1 {
+        font-size: 2em;
+
+        line-height: 200%;
+
+        margin-bottom: 20px;
+
+        background: linear-gradient(to right, gold, rgb(167, 150, 0));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      p{
+        margin: 30px;
+        font-size: 1.5rem;
+      }
+
+      .memberDiv {
+        display: grid;
+        column-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        /* place-items: center; */
+        margin-bottom: 50vh;
+        margin-top: 10vh;
+        opacity: 0;
+        transition: all 0.5s;
+        transform: translate(-100%, 0%);
+      }
+
+      .memberDiv h1 {
+        display: inline;
+        background: linear-gradient(to right, gold, rgb(167, 150, 0));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+      .memberDiv p {
+        font-size: 2.5rem;
+      }
+
+      .memberDiv .MemberPic {
+        grid-row: 1/ span 2;
+        text-align: center;
+        margin-left: 10vw;
+      }
+
+      .memberDiv h2 {
+        grid-column: 2;
+        text-align: left;
+        color: rgb(183, 183, 183);
+      }
+
+      .memberDiv h1 {
+        grid-column: 2;
+        text-align: left;
+      }
+
+      .memberDiv p {
+        grid-row: 3;
+        grid-column: 1/ span 3;
+        margin: 10px 40px 30px 40px;
+      }
+    </style>
+
+    <nav>
+      <!-- <div class="logo">
+      </div> -->
+      <a href = "/" class = "title gradient">Peregrine<br>Warriors</a>
+
+      <!-- <div class="header-text"> -->
+      <div class = "Navigation">
+        <a href = "/teammates/teamMembers.html">Members</a>
+        <a href ="/story/ourStory.html">Story</a>
+        <a href = "/prototypes/prototype.html">Prototypes</a>
+      </div>
+    </nav>
+    <h1>Team members</h1>
+    <div class="memberDiv">
+        <h1>Nadeem <br> Vanker</h1>
+        <img src = "/assets/images/naddem.jpg" alt = "Nadeem picture"  class = "MemberPic">
+        <h2>Embedded programmer</h2>
+        <p>Nadeem Vanker, our embedded systems programmer lead our team with his profound
+        skills and knowledge of low level programming and hardware.
+        </p>
+    </div>
+    
+    <div class="memberDiv">
+        <h1>Billel <br> Sekulic</h1>
+        <img src = "/assets/images/billel.jpg" alt = "Billel picture" class = "MemberPic">
+        <h2>3D designer</h2>
+        <p>Billel Sekulic, our 3D designer was responsible for all of our car body prototypes
+        and also the final design. His 3D designs can be viewed on the prototype page.
+        </p>
+    </div>
+    <div class="memberDiv">
+        <h1>Yeonjun <br>Lee</h1>
+        <img src = "/assets/images/Yeonjun.jpg" alt = "Yeonjun picture" class = "MemberPic">
+        <h2>Research Assistant</h2>
+        <p>Yeonjun Lee, our research assistant, helped Advaith Krishnakumar on his research about 
+            4x4 cars and articulated vehicles. 
+        </p>
+    </div>
+    <div class="memberDiv">
+        <h1>Advaith<br> Krishnakumar</h1>
+        <img src = "/assets/images/Advaith.jpg" alt = "Advaith picture" class = "MemberPic">
+        <h2>Research Assistant/Driver</h2>
+        <p>Advaith Krishnakumar, our research assistant, conducted tests and research about our RC car. With his profound knowledge and
+            youthful enthusiasm, he was very happy to participate this competition. 
+        </p>
+    </div>
+    <div class="memberDiv">
+        <h1>Illia <br>Korlov</h1>
+        <img src = "/assets/images/Illia.jpg" alt = "Illia picture" class = "MemberPic">
+        <h2>Designer/Marketing Manager</h2>
+        <p>Illia Korlov, our designer, was responsible for our team identity. He made our team T-Shirt and was responsible
+            for our pit display. 
+        </p>
+    </div>
+    <div class="memberDiv">
+        <h1>Shahin <br>Sekulic</h1>
+        <img src = "/assets/images/Shahin.jpg" alt = "Shahin picture" class = "MemberPic">
+        <h2>Team manager</h2>
+        <p>Shahin Sekulic, our team manager, was responsible for leading our team. He used very professional tools to organise our team schedule.</p>
+    </div>
+    
+
+    <script>
+      const divs = document.querySelectorAll(".memberDiv");
+
+      const observer = new IntersectionObserver((e) => {
+        e.forEach((div) => {
+          if (div.isIntersecting) {
+            div.target.style.opacity = 1;
+            div.target.style.transform = 'translate(0%, 0%)';
+          } else {
+            div.target.style.opacity = 0;
+            div.target.style.transform = 'translate(-100%, 0%)';
+          }
+        });
+      });
+
+      divs.forEach((div) => {
+        observer.observe(div);
+      });
+      
+    </script>
+</body>
+</html>

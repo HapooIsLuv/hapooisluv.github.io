@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Team Peregrine Warriors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" crossorigin src="/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
+    <script type="module" crossorigin src="/assets/authenticator-ZkDHeO09.js"></script>
+    <script type="module" crossorigin src="/assets/main-Rtrt4-xs.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-5BYvHeyF.css">
+  </head>
+  <style>
+
+  div {
+    opacity: 0;
+    transition: all 1s;
+  }
+
+    
+
+  h1 {
+    font-size: 3em;
+  }
+
+  nav {
+    margin-bottom: 0;
+  }
+
+  .main-image-div {
+    width: 100%;
+    height: 70vh;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0;
+    background-image: 
+    /* linear-gradient(to top, rgba(0,0,0,1),rgba(0,0,0,0.05), rgba(0,0,0,0)), */
+    url("assets/images/mainPage.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    position: relative; 
+  }
+
+  
+  .main-image-div img {
+    height: 200px;
+    background-size: 200px 200px;
+    border-radius: 20px;
+    margin: 30vh 0 20px 0; 
+    outline: 2px solid white;
+  }
+
+
+
+    .quote {
+      font-style: italic;
+      margin: 40px;
+      font-size: 18px;
+    }
+
+    .team-name {
+      font-size: 32px;
+
+      font-weight: bold;
+
+      margin:40px;
+
+      margin-bottom: 30vh;
+    }
+
+    .members-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 0.5fr);
+      grid-template-rows: repeat(3, 0.5fr);
+      gap: 20px;
+      margin-bottom: 10vh;
+      margin-top: 10vh;
+    }
+    .member-circle img {
+      width: 150px;  /* Adjust as needed */
+      height: 150px; /* Adjust as needed */
+      border-radius: 50%;  /* Makes the image circular */
+      object-fit: cover;   /* Ensures the image covers the circle nicely */
+    }
+    .member-circle h1 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 2.5rem;  /* Adjust as needed */
+    }
+    .member-circle p {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #dbdbdb;  /* Adjust as needed */
+    }
+    .story {
+      margin-top: 10vh;
+      margin-bottom: 50vh;
+    }
+
+    .story a {
+      text-decoration: underline;
+      font-size: 2em;
+      color: gold;
+      margin-top: 5px;
+    }
+
+    .story a:visited {
+      color:rgb(167, 150, 0);
+    }
+
+    .story a:hover {
+      font-weight: bold;
+    }
+
+    .teammatesLink {
+      margin-bottom: 50vh;
+      height: 10vh;
+    }
+
+    .teammatesLink a {
+      text-decoration: underline;
+      font-size: 2em;
+      color: gold;
+      margin-top: 5px;
+    }
+
+    .teammatesLink a:visited {
+      color:rgb(167, 150, 0);
+    }
+
+    .teammatesLink a:hover {
+      font-weight: bold;
+    }
+
+  </style>
+  <body>
+    <!-- <div class="header"> -->
+    <nav>
+      <!-- <div class="logo">
+      </div> -->
+      <a href = "/" class = "title gradient">Peregrine<br>Warriors</a>
+
+      <!-- <div class="header-text"> -->
+      <div class = "Navigation">
+        <a href = "/teammates/teamMembers.html">Members</a>
+        <a href ="/story/ourStory.html">Story</a>
+        <a href = "/prototypes/prototype.html">Prototypes</a>
+      </div>
+    </nav>
+    <div class="main-image-div">
+      <img src="/assets/images/Logo.png" alt="Prototype"/>
+      <h1 class = "title" style = "margin: 0">TEAM PEREGRINE WARRIORS</h1>
+    </div>
+
+    <div class="quote">“Power, perseverance, precision”</div>
+    <div class="team-name">Team Peregrine Warriors</div>
+    <h1 class = "gradient">Meet the Team</h1>
+
+    <div class="members-grid">
+      <div class="member-circle">
+        <img src="/assets/images/billel.jpg" alt="Member 1">
+        <h1>Billel</h1>
+        <p>3D Engineer</p>
+      </div>
+      <div class="member-circle">
+        <img src="/assets/images/Shahin.jpg" alt="Member 2">
+        <h1>Shahin</h1>
+        <p>Team manager</p>
+      </div>
+      <div class="member-circle">
+        <img src="/assets/images/naddem.jpg" alt="Member 3">
+        <h1>Nadeem</h1>
+        <p>Embedded Engineer</p>
+      </div>
+      <div class="member-circle">
+        <img src="assets/images/Advaith.jpg" alt="Member 4">
+        <h1>Advaith</h1>
+        <p>Research Assistant</p>
+      </div>
+      <div class="member-circle">
+        <img src="assets/images/Yeonjun.jpg" alt="Member 5">
+        <h1>Yeonjun</h1>
+        <p>Research Assistant 2</p>
+      </div>
+      <div class="member-circle">
+        <img src="/assets/images/Illia.jpg" alt="Member 6">
+        <h1>Illia</h1>
+        <p>Marketing manager</p>
+      </div>
+    </div>
+    <div class = "teammatesLink">
+      <a href ="/teammates/teamMembers.html">Our Teammates</a>
+    </div>
+    
+
+  <div class="story">
+    <h1>Our Story</h1>
+    <p>Team Peregrine Warriors was founded with the mission to drive innovation through teamwork, resilience, and creativity.</p>
+    <a href="/story/ourStory.html" class="Learn more">Learn more</a>
+  </div>
+  
+    <div class="container">
+        <h1>Logo Evolution</h1>
+
+        <div id="prototype">
+            <h2>Our First Five Prototypes</h2>
+            <!-- <alt="Prototype 1"> -->
+            <img src="assets/images/first one.png" alt="Prototype 2">
+            <img src="assets/images/second one.png" alt="Prototype 3">
+            <img src="assets/images/third one.png" alt="Prototype 4">
+            <img src="assets/images/fourth one.png" alt="Prototype 5">
+        </div>
+
+        <div id="final-logo">
+            <h2>Our Final Logo</h2>
+            <img src="/assets/images/Logo.png" alt="Final Logo">
+        </div>
+
+        <div id="ideology">
+            <h2>Our Ideology & Inspirations</h2>
+            <img src="assets/images/srh.jpeg" alt="Inspiration 1">
+            <img src="assets/images/moodboard.png" alt="Inspiration 2">
+        </div>
+    </div>
+</body>
+<script>
+   const divs = document.querySelectorAll("div");
+
+    const observer = new IntersectionObserver((e) => {
+    e.forEach((div) => {
+      if (div.isIntersecting) {
+        div.target.style.opacity = 1;
+        // div.target.style.transform = 'scale(1)';
+      } else {
+        div.target.style.opacity = 0;
+        // div.target.style.transform = 'scale(1)';
+      }
+    });
+    });
+
+  divs.forEach((div) => {
+    observer.observe(div);
+  });
+</script>
+</html>

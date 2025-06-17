@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototypes</title>
+  <script type="module" crossorigin src="/assets/prototypes-D4T4uTNb.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
+</head>
+<body>
+    <canvas id = "background" height = "100%" width="100%"></canvas>
+    <form id = "prototypeForm">
+        <select id = "prototypes" name = "prototypes">
+            <option value = "first">First Prototype</option>
+            <option value = "second">Second Prototype</option>
+            <option value = "third">Third Prototype</option>
+        </select>
+    </form>
+    <button id = "showGridlines">Show lighting</button>
+    <a href = "/index.html" id = "return">Return</button>
+</body>
+<style>
+    canvas {
+        position:fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #return {
+        position: relative;
+        top:0;
+        background-color: white;
+        font-size: 1.5em;
+        border: none;
+        background-color: transparent;
+        color:white;
+        border-radius: 5px;
+        padding: 5px;
+        text-decoration: none;
+        transition: all 1s ease-in-out;
+    }
+
+    #returnButton:hover{
+        background-color: gold;
+    }
+
+    #prototypeForm {
+        position: relative;
+        z-index: 1;
+        font-size: 2em;
+        border: none;
+        size:150%;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    select {
+        background-color: transparent;
+        color: white;
+        border: none;
+        padding: 0;
+    }
+
+    #showGridlines {
+        position: relative;
+        top:0;
+        background-color: white;
+        font-size: 1.5em;
+        border: none;
+        background-color: transparent;
+        color:white;
+        border-radius: 5px;
+        padding: 5px;
+        text-decoration: none;
+        pointer-events:all;
+        outline: solid grey 1px;
+    }
+
+</style>
+</html>
